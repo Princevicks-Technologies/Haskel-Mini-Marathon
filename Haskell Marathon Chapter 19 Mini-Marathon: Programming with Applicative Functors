@@ -1,0 +1,48 @@
+🧠 Chapter 19 – Mini-Marathon: Programming with Applicative Functors
+In this chapter, you discovered why Applicative functors exist, how they expand on Functor, and how to structure computations that have independent effects. Now let’s build something that makes these concepts come alive.
+
+🎯 Objectives
+🔹 Understand the limits of Functor and how Applicative goes further
+🔹 Learn to apply wrapped functions to wrapped values using <*>
+🔹 Explore pure and its role in lifting
+🔹 Apply effects composition in a clean, predictable way
+🔹 Solidify your understanding of the Applicative laws
+
+🧪 What to Deliver
+📌 A Haskell program that:
+
+Defines or uses a custom type with a lawful Applicative instance
+
+Demonstrates use of <*> for combining multiple values in context
+
+Uses pure to lift regular values
+
+Showcases liftA2, *>, <* and how they differ from monadic sequencing
+
+Outputs a step-by-step explanation of how the effects combine
+
+📌 Include comments or a README.md with:
+
+Explanation of why Applicative is needed beyond Functor
+
+A real-life analogy (e.g., forms with validation, multiple inputs, or optional computations)
+
+Laws (identity, composition, homomorphism, interchange) and how your code respects them
+
+💡 Bonus Challenges
+⭐ Build a form validator using Maybe, Either, or a custom error type
+⭐ Combine three or more effects using <*> and liftA3
+⭐ Use lists as Applicative and show how combinations work
+⭐ Compare your applicative code with a monadic version – what’s simpler?
+⭐ Try an Applicative for a custom type like Validation, Parser, or Expr
+
+📦 Build Instructions
+✅ Write pure functions first and wrap them using pure, <*>, etc.
+✅ Organize reusable parts into modules if needed
+✅ Add a README.md that includes:
+
+Your examples and effects
+
+How Applicative helped with clarity or structure
+
+Short notes on laws or behavior in your program
