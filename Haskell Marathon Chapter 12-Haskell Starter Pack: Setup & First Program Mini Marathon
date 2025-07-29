@@ -1,0 +1,73 @@
+🛠️ Chapter 12 – Haskell Starter Pack: Setup & First Program Mini Marathon
+You've just completed Chapter 12, which walks you through installing the full Haskell development environment and writing your first working Haskell program!
+
+✅ Installing Haskell
+✅ Installing GHCup
+✅ Installing GHC, Cabal, Stack, and HLS
+✅ Installing VSCode and configuring Haskell extensions
+✅ Writing and saving a .hs file
+✅ Compiling and running your first Haskell program
+
+This Mini-Marathon is all about solidifying your setup and writing your very first Haskell program from scratch.
+
+🎯 Objectives
+🔹 Successfully install and configure a Haskell development environment using GHCup
+🔹 Learn to use ghc, ghci, cabal, and stack
+🔹 Set up VSCode with Haskell support
+🔹 Write your first Haskell program (Hello, Haskell!)
+🔹 Understand the compilation and interpretation flow
+
+🧪 What to Deliver
+Submit a working setup that includes:
+
+📁 A project folder named hello-haskell/ containing:
+
+A .hs file with a basic greeting function
+
+A compiled binary or a note on how you ran the program
+
+A short write-up in README.md that answers:
+
+Which tools did you install (with version numbers)?
+
+What command did you use to compile/run?
+
+What did the program output?
+
+Did you encounter any setup issues?
+
+💡 Bonus Challenges
+⭐ Customize the program to greet a specific user
+⭐ Try a second program that uses a simple function
+⭐ Run your program using both ghc and stack
+⭐ Test live editing and type hints using HLS in VSCode
+⭐ Explore ghci and run your file interactively
+
+📦 Build Instructions
+✅ Install GHCup
+✅ Use GHCup to install:
+
+ghc
+
+cabal
+
+stack
+
+hls (Haskell Language Server)
+
+✅ Install and configure VSCode with:
+
+Haskell Extension Pack
+
+Haskell Syntax Highlighting
+
+✅ Write and save a .hs file (e.g., Hello.hs)
+✅ Run it with:
+
+ghc Hello.hs && ./Hello
+
+or stack run (with stack init and Main.hs)
+
+or ghci Hello.hs
+
+✅ Screenshot or describe your result
