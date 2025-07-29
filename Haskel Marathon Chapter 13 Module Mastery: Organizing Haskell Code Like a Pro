@@ -1,0 +1,56 @@
+📦 Chapter 13 – Module Mastery: Organizing Haskell Code Like a Pro
+In Chapter 13, you’ve taken a step toward writing maintainable and modular code by learning about Haskell modules, environments, and namespaces.
+
+✅ Importing Modules
+✅ Controlling environments and namespace pollution
+✅ Creating your own modules
+✅ Using the Prelude and Standard Libraries
+
+This mini-marathon helps you structure a small Haskell project using custom and standard modules, reinforcing good practices in code organization and reusability.
+
+🎯 Objectives
+🔹 Learn to import standard Haskell modules
+🔹 Create your own .hs files as reusable modules
+🔹 Explore namespacing using qualified and selective import
+🔹 Understand the role of Prelude and when to hide it
+🔹 Structure a real mini project into separate modules
+
+🧪 What to Deliver
+📁 A folder/project with the following:
+
+At least three custom modules:
+
+Main.hs: The entry point
+
+MathOps.hs: Contains simple math utilities
+
+Greeting.hs: Contains string-based greeting utilities
+
+Proper module declarations and import usage
+
+Demonstration of both qualified and selective imports
+
+Use of at least two standard library modules like:
+
+Data.List, System.IO, or Data.Char
+
+A README.md explaining:
+
+How modules are declared and used
+
+How namespace control was applied
+
+What standard modules were used and why
+
+💡 Bonus Challenges
+⭐ Use hiding, qualified, and as to control your import behavior
+⭐ Create a fourth module that re-exports functions from the other two
+⭐ Use Data.Map or System.Directory in your modules
+⭐ Demonstrate loading your custom module into ghci
+⭐ Experiment with hiding Prelude and writing your own basic functions
+
+📦 Build Instructions
+✅ Place each module in its own .hs file
+✅ Run with ghc --make Main.hs or using stack run
+✅ Use ghci for interactive exploration (ghci Main.hs)
+✅ Test selective imports, fully-qualified names, and controlled environments
