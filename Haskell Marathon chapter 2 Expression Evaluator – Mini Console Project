@@ -1,0 +1,78 @@
+
+# 🎓 Expression Evaluator – Mini Console Project
+
+You’ve just completed **Chapter 2**, where you explored Haskell's **type system** and how to write powerful, type-safe functions:
+
+✅ Pragmatic intro to types  
+✅ Function signatures  
+✅ Playing with functions  
+✅ Variables in Haskell  
+✅ Infix and prefix functions  
+✅ Common data types (`Int`, `Float`, `Bool`, `Char`, `String`)  
+✅ Polymorphic values and type variables  
+
+This mini-marathon challenges you to build an **Expression Evaluator** — a small Haskell console app that evaluates user-inputted math expressions using **pure functions**, **type annotations**, and **type variables**.
+
+---
+
+## 🎯 Objectives
+
+🔹 **Write explicit function signatures** – practice writing and understanding types.  
+🔹 **Use common data types** – work with `Int`, `Float`, `Char`, `Bool`, and `String`.  
+🔹 **Explore infix and prefix notation** – evaluate expressions both ways.  
+🔹 **Create polymorphic functions** – write type-generic utilities.  
+🔹 **Use variables and binding** – work with `let` and `where` to bind intermediate results.  
+🔹 **Experiment with expressions** – reinforce Haskell’s evaluation model.  
+
+---
+
+## 🧪 What to Deliver
+
+A **runnable console application** that:
+
+📌 Displays a welcome message and menu:
+```
+1. Add Two Numbers  
+2. Multiply  
+3. Check Even or Odd  
+4. Find Maximum  
+5. Exit
+```
+
+📌 Uses **typed functions** like:
+```haskell
+add :: Int -> Int -> Int
+multiply :: Float -> Float -> Float
+isEven :: Int -> Bool
+maxOfTwo :: (Ord a) => a -> a -> a
+```
+
+📌 Accepts user input, evaluates the expression, and prints the result.
+
+📌 Demonstrates both **infix** (`a + b`) and **prefix** (`add a b`) styles.
+
+---
+
+## 💡 Bonus Challenges
+
+⭐ Define a polymorphic function:
+```haskell
+identity :: a -> a
+```
+
+⭐ Use `read :: a` with type annotations to parse input polymorphically.  
+⭐ Use higher-order functions like `map` and `filter` for list-based evaluations.  
+⭐ Add support for evaluating more complex math expressions (after parsing chapter).  
+⭐ Display the type of user input using `:t` in GHCi (manually).
+
+---
+
+## 📦 Build Instructions
+
+✅ Run and test in **GHCi** (`ghci ExpressionEvaluator.hs`)  
+✅ Organize your code into **pure functions** with explicit types  
+✅ Optional: Package using **Stack** or **Cabal**  
+✅ Include a small `README.md` file with:
+- What the app does  
+- How to run it  
+- Sample inputs and outputs  
