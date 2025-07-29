@@ -1,0 +1,57 @@
+🧠 Chapter 16 – Haskell Superpowers: Debugging, REPL & Exploration
+In Chapter 16, you’ve equipped yourself with powerful Haskell tooling and REPL tips for debugging, exploration, and documentation lookup. This mini-marathon challenges you to apply those tools to build better, faster, and smarter Haskell programs.
+
+✅ Exploring ghci and the REPL
+✅ Using undefined and type holes to incrementally develop functions
+✅ Searching functions on Hoogle
+✅ Browsing libraries on Hackage
+✅ Completing the final section project
+
+🎯 Objectives
+🔹 Practice using ghci commands for inspecting and testing code
+🔹 Debug incrementally with undefined and _ :: type holes
+🔹 Use Hoogle to find functions by type signature
+🔹 Use Hackage to explore and install packages
+🔹 Complete the final mini-project by combining everything learned so far
+
+🧪 What to Deliver
+📌 A small, working program of your choice (e.g., a mini calculator, parser, or list utility)
+📌 Development done step by step using:
+
+undefined as placeholders
+
+_ :: type to guide implementation
+📌 Documented use of:
+
+REPL commands like :t, :i, :r, :l, :browse, :set +t
+
+Function lookups using Hoogle (https://hoogle.haskell.org/)
+
+Package discovery on Hackage (https://hackage.haskell.org/)
+
+📌 Final project should:
+
+Compile and run successfully
+
+Demonstrate use of at least one external package (optional)
+
+Be tested in ghci
+
+💡 Bonus Challenges
+⭐ Use :type +d in REPL to debug function types
+⭐ Use :set +s to check memory/time performance
+⭐ Import a small utility package from Hackage using Cabal
+⭐ Build a function by only using Hoogle and type signatures
+⭐ Use type holes (_) to guide building a polymorphic function
+
+📦 Build Instructions
+✅ Run your project in ghci for step-by-step development
+✅ Optionally package with Cabal if you use external libraries
+✅ Provide a short README.md with:
+
+Description of what your program does
+
+Example REPL usage
+
+What Hoogle/Hackage tools you used
+
