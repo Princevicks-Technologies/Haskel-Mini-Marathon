@@ -1,0 +1,67 @@
+⚙️ Chapter 14 – Cabal Explorer: Building Projects with Extensions
+You’ve just unlocked Chapter 14, diving into Cabal, the Haskell build system and packaging tool. This chapter empowers you to create and manage full Haskell projects with reusable components and advanced features.
+
+✅ Introduction to Cabal
+✅ Creating new projects
+✅ Understanding .cabal files
+✅ Using external libraries
+✅ Building and running executables
+✅ Language extensions and pragmas
+✅ Using NumericUnderscores, TypeApplications
+
+This mini-marathon project challenges you to create a Cabal-based calculator project that also demonstrates advanced language extensions.
+
+🎯 Objectives
+🔹 Create a new Cabal project using cabal init
+🔹 Understand and edit the .cabal file structure
+🔹 Add at least one external library (e.g., text, random, or containers)
+🔹 Enable and use language extensions:
+
+NumericUnderscores
+
+TypeApplications
+
+(Bonus: try PartialTypeSignatures, ScopedTypeVariables, etc.)
+
+🔹 Use main to run a basic console calculator:
+
+Add two numbers
+
+Show number with underscores
+
+Use TypeApplications to parse values dynamically
+
+🧪 What to Deliver
+📁 A working Cabal project that includes:
+
+A Main.hs file with type-annotated pure functions
+
+A calculator.cabal file with metadata, dependencies, and extensions
+
+A README.md with:
+
+How to run the project
+
+Sample usage of TypeApplications and NumericUnderscores
+
+How to build with cabal build and run with cabal run
+
+💡 Bonus Challenges
+⭐ Create and expose a library module inside the same project
+⭐ Use PartialTypeSignatures to reduce boilerplate
+⭐ Try out ScopedTypeVariables in local bindings
+⭐ Print numbers like 1_000_000 :: Int using NumericUnderscores
+⭐ Use TypeApplications to convert string input into multiple types
+
+📦 Build Instructions
+✅ Run cabal init --interactive to set up the project
+✅ Use cabal build to compile
+✅ Use cabal run to execute
+✅ Explore the project in VSCode with Haskell Language Server (HLS)
+✅ Enable language extensions at the top of your file like:
+
+haskell
+Copy
+Edit
+{-# LANGUAGE TypeApplications #-}
+{-# LANGUAGE NumericUnderscores #-}
