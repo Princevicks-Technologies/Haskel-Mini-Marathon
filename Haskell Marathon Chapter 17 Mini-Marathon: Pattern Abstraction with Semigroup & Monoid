@@ -1,0 +1,46 @@
+🧠 Chapter 17 – Mini-Marathon: Pattern Abstraction with Semigroup & Monoid
+In Chapter 17, you explored abstracting patterns in Haskell using type classes like Semigroup and Monoid. These abstractions allow you to define general-purpose combining logic that works across many types.
+
+🎯 Objectives
+🔹 Understand what it means to abstract a pattern using type classes
+🔹 Learn why abstraction matters: reuse, clarity, consistency
+🔹 Explore and implement Semigroup and Monoid instances
+🔹 Build small utilities using these abstractions
+🔹 Practice with <> and mempty in real-world examples
+
+🧪 What to Deliver
+📌 A small Haskell console project that:
+
+Defines your own data type(s)
+
+Implements Semigroup and Monoid instances for them
+
+Demonstrates combining values using <> and default identity with mempty
+
+Shows how abstraction simplifies operations like merging, folding, or aggregating
+
+📌 Include clear comments or documentation on:
+
+What patterns you noticed
+
+How Semigroup/Monoid helped abstract those patterns
+
+Where and why to use them
+
+💡 Bonus Challenges
+⭐ Create a Transaction or Stats type and define Semigroup and Monoid for it
+⭐ Use foldMap to combine a list of values into one using Monoid
+⭐ Compose Monoid instances (e.g., Maybe, Either, or tuple types)
+⭐ Build a small DSL (domain-specific language) that uses Monoid behind the scenes
+⭐ Compare manual combination logic vs. abstracted Monoid approach
+
+📦 Build Instructions
+✅ Write and test in ghci or with Cabal/Stack
+✅ Organize your code into modules if necessary
+✅ Add a README.md with:
+
+Description of the problem or data type you abstracted
+
+How Semigroup and Monoid helped
+
+Sample usage/output
