@@ -1,0 +1,85 @@
+🎓 Tax Bracket Calculator – Mini Console Project
+You’ve just completed Chapter 3, where you explored conditional logic and scoped expressions in Haskell:
+
+✅ if-then-else expressions
+✅ Guards
+✅ let expressions
+✅ where bindings
+✅ When to use let vs where
+
+This mini-marathon challenges you to build a Tax Bracket Calculator — a console-based tool that calculates tax based on income and predefined rules using expressive conditional structures in Haskell.
+
+🎯 Objectives
+🔹 Use if-then-else – handle simple income decisions directly with conditional branches.
+🔹 Explore guards – define readable, scalable tax logic using guards.
+🔹 Practice let expressions – bind intermediate calculations within expressions.
+🔹 Use where clauses – structure logic for clarity and reuse.
+🔹 Compare let and where – understand scope and usage through side-by-side examples.
+
+🧪 What to Deliver
+A runnable console application that:
+
+📌 Displays a welcome message and menu:
+
+markdown
+Copy
+Edit
+1. Enter Income and Calculate Tax  
+2. Compare Two Incomes  
+3. Show Tax Rules  
+4. Exit
+📌 Accepts user income as Float or Int input.
+📌 Calculates tax using:
+
+if-then-else for quick thresholds.
+
+Guards for tiered brackets.
+
+let for binding intermediate taxable values.
+
+where for reusable logic (like tax rates or caps).
+
+📌 Example tax logic:
+
+haskell
+Copy
+Edit
+calculateTax :: Float -> Float
+calculateTax income
+  | income <= 30000 = income * 0.05
+  | income <= 60000 = income * 0.10
+  | income <= 100000 = income * 0.20
+  | otherwise = income * 0.30
+📌 Option to compare tax values between two incomes.
+📌 Uses let in expressions like:
+
+haskell
+Copy
+Edit
+let bonus = 0.1 * income in income + bonus
+📌 Uses where to refactor common parts:
+
+haskell
+Copy
+Edit
+netPay income = income - tax
+  where tax = calculateTax income
+💡 Bonus Challenges
+⭐ Add another function to categorize taxpayers (Low, Middle, High) using guards.
+⭐ Use a tuple to return both tax and net income.
+⭐ Add user-defined tax rules at runtime (advanced).
+⭐ Use a case expression to handle input commands.
+⭐ Show both let and where implementations side by side in the same file for comparison.
+
+📦 Build Instructions
+✅ Run and test in GHCi (ghci TaxCalculator.hs)
+✅ Organize code into pure functions with type annotations
+✅ Optional: Package using Stack or Cabal
+✅ Include a small README.md file with:
+
+What the app does
+
+How to run it
+
+Sample inputs and outputs
+
