@@ -1,0 +1,71 @@
+🚨 Chapter 15 – Exception Hunter: Optional Values vs. Exceptions
+In Chapter 15, you've entered the real world of error handling in Haskell — because not everything works out! You now understand how to handle errors using exceptions, Maybe, and Either types, and how to write safer, more expressive programs.
+
+✅ Throwing and catching exceptions
+✅ Using Maybe for optional values
+✅ Using Either for errors with context
+✅ Understanding tradeoffs and when to use what
+✅ Using catch, try, and custom exceptions
+
+This mini-marathon project challenges you to build a Self-Driving Console Simulator that handles all kinds of inputs, obstacles, and failures using Maybe, Either, and exceptions.
+
+🎯 Objectives
+🔹 Simulate a dumb self-driving car 🤖🚗 that:
+
+Reads user instructions (e.g., "Go forward", "Turn left")
+
+Encounters errors (e.g., obstacle, bad command)
+
+Recovers from failure with useful error messages
+
+🔹 Use:
+
+Maybe to represent operations that may fail (e.g., direction lookup)
+
+Either String a to carry failure reasons (e.g., "Obstacle detected!")
+
+throw and catch for exceptional control flow
+
+🔹 Create pure and impure functions with graceful failure handling.
+
+🧪 What to Deliver
+📁 A Haskell console program that:
+
+📌 Accepts commands like forward, left, right, stop
+📌 Fails safely when unknown commands are given
+📌 Randomly simulates obstacles or empty battery
+📌 Uses:
+
+Maybe for operations like lookup or sensor check
+
+Either for user-level errors (e.g., "Turn not possible")
+
+Exception handling (e.g., using Control.Exception) for critical failures
+
+📌 Has well-annotated functions with types like:
+
+haskell
+Copy
+Edit
+parseCommand :: String -> Maybe Command  
+moveCar :: Command -> Either String Status  
+simulateFailure :: IO ()  
+📌 Demonstrates both:
+
+Graceful failure (with Maybe and Either)
+
+Emergency failure (with throw/catch)
+
+💡 Bonus Challenges
+⭐ Create a custom exception type
+⭐ Write a recovery function using catch
+⭐ Use try to wrap an action and return Either
+⭐ Combine multiple exception types with pattern matching
+⭐ Use EitherT monad transformer (if you're brave 💪)
+
+📦 Build Instructions
+✅ Write your code in Main.hs
+✅ Run with ghci Main.hs or compile with ghc Main.hs -o simulator
+✅ Optionally set up a Cabal project
+✅ Document your commands and example outputs in a README.md
+
