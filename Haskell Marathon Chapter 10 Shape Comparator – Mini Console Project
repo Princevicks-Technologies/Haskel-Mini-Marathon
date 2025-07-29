@@ -1,0 +1,100 @@
+🎓 Shape Comparator – Mini Console Project
+You’ve just completed Chapter 10, where you explored type classes, overloading, and deriving in Haskell:
+
+✅ Overloading
+✅ Creating type classes and instances
+✅ The Eq type class
+✅ Defining multiple instances
+✅ Mutual recursion
+✅ Parameterized types
+✅ Ord and subclassing
+✅ deriving pitfalls
+
+This mini-marathon challenges you to build a Shape Comparator – a console app that defines geometric shapes, compares them by area or perimeter, and showcases custom type class instances, derivation, and parameterization.
+
+🎯 Objectives
+🔹 Define custom type classes – create your own Shape and Drawable type classes.
+🔹 Use Eq and Ord – implement equality and ordering for shapes based on dimensions.
+🔹 Support parameterized types – store additional info alongside shapes (e.g., label :: String).
+🔹 Practice overloading – implement multiple instances for different shapes.
+🔹 Try deriving – derive Show, Eq, Ord, but also identify where deriving might go wrong.
+🔹 Use mutual recursion – demonstrate Eq comparison with multiple shapes using mutual calls.
+
+🧪 What to Deliver
+A runnable console application that:
+
+📌 Greets the user and shows a menu:
+
+pgsql
+Copy
+Edit
+1. Add a shape (Circle or Rectangle)  
+2. List all shapes  
+3. Compare shapes by area  
+4. Compare shapes by perimeter  
+5. Exit
+📌 Defines a custom type class:
+
+haskell
+Copy
+Edit
+class Shape a where
+  area :: a -> Float
+  perimeter :: a -> Float
+📌 Implements instances:
+
+haskell
+Copy
+Edit
+data Circle = Circle Float deriving (Show)
+data Rectangle = Rectangle Float Float deriving (Show)
+
+instance Shape Circle where
+  area (Circle r) = pi * r^2
+  perimeter (Circle r) = 2 * pi * r
+
+instance Shape Rectangle where
+  area (Rectangle w h) = w * h
+  perimeter (Rectangle w h) = 2 * (w + h)
+📌 Derives and implements:
+
+Eq and Ord instances comparing by area.
+
+Show for console output.
+
+📌 Uses parameterized shape container:
+
+haskell
+Copy
+Edit
+data LabeledShape a = LabeledShape String a deriving (Show)
+📌 Demonstrates comparing two shapes with a function like:
+
+haskell
+Copy
+Edit
+compareByArea :: (Shape a, Shape b) => a -> b -> Ordering
+💡 Bonus Challenges
+⭐ Define a multi-method class:
+
+haskell
+Copy
+Edit
+class Drawable a where
+  draw :: a -> String
+⭐ Use mutual recursion to compare nested shapes.
+⭐ Use Maybe to safely handle comparisons of incompatible types.
+⭐ Allow user to tag shapes and search by label.
+⭐ Handle incorrect comparisons with custom error messages.
+
+📦 Build Instructions
+✅ Test in GHCi (ghci ShapeComparator.hs)
+✅ Structure your code into separate modules for Types, Instances, and Main
+✅ Optional: Build using Stack or Cabal
+✅ Include a small README.md with:
+
+What the app does
+
+How to run it
+
+Example input/output
