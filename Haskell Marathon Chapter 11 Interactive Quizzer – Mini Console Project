@@ -1,0 +1,68 @@
+🎓 Interactive Quizzer – Mini Console Project
+You’ve just completed Chapter 11, where you explored the world of IO in Haskell:
+
+✅ Pure functions
+✅ Introduction to IO actions
+✅ The () (unit) type
+✅ User interaction with getLine, getChar, putStrLn
+✅ The >> and >>= operators
+✅ Nesting and composing IO
+✅ Escaping IO with return
+✅ Writing a complete main action
+
+This mini-marathon challenges you to build an Interactive Quizzer — a terminal-based app that quizzes the user, scores their responses, and uses IO actions effectively while keeping logic as pure as possible.
+
+🎯 Objectives
+🔹 Understand the difference between pure and impure code
+🔹 Practice using IO actions for input/output
+🔹 Use do blocks, sequencing (>>), and binding (>>=)
+🔹 Apply the unit type in practical code
+🔹 Compose interactive logic while isolating pure functions
+🔹 Use let bindings inside do blocks and return values from IO
+🔹 Build a complete interactive application with a main function
+
+🧪 What to Deliver
+A runnable console application that:
+
+Greets the user
+
+Asks for the user's name and displays a personalized welcome message
+
+Presents a set of 3–5 multiple-choice or True/False quiz questions
+
+Collects and processes user answers
+
+Checks the correctness of each answer using pure logic
+
+Displays the final score at the end of the quiz
+
+Makes use of main, do blocks, and various IO functions
+
+Clearly separates pure and impure parts of the program
+
+💡 Bonus Challenges
+⭐ Allow the user to play multiple rounds by asking if they want to try again
+⭐ Use mapM_ or similar functions to handle lists of questions dynamically
+⭐ Separate logic into pure functions: checking answers, scoring, formatting questions
+⭐ Use branching (e.g., if, case) within do blocks
+⭐ Make user input case-insensitive for robustness
+⭐ (Advanced) Track user scores in memory or using a file (optional file IO)
+
+📦 Build Instructions
+Run and test using GHCi
+
+Structure your code into:
+
+A main module handling IO
+
+One or more modules for pure logic (optional)
+
+Package with Stack or Cabal if needed
+
+Include a README.md with:
+
+A description of the project
+
+How to compile and run it
+
+Sample questions and expected inputs/outputs
