@@ -1,0 +1,94 @@
+
+# 🎓 Pay Calculator – Mini Console Project
+
+You’ve just completed **Chapter 1**, where you explored the **foundations of Haskell**:
+
+✅ What is Haskell?  
+✅ Functional programming and function composition  
+✅ Pure and explicit effects  
+✅ Basic syntax and expressions  
+✅ Indenting and commenting  
+✅ Defining and using functions  
+✅ Haskell’s type system  
+✅ Laziness  
+✅ Tools: GHC (GHCi), Cabal, Stack  
+
+This mini-marathon challenges you to build a **command-line Pay Calculator**. You’ll collect user input for employee hours and rate, and compute the **weekly net pay**, while practicing key chapter one concepts.
+
+---
+
+## 🎯 Objectives
+
+🔹 **Use expressions and type annotations** – define pay formulas using typed functions.
+
+🔹 **Practice functional programming** – build logic through small, reusable pure functions.
+
+🔹 **Demonstrate explicit effects** – keep input/output separate from pure logic.
+
+🔹 **Apply `let/in` and `where` clauses** – use both expression and declaration styles.
+
+🔹 **Use conditional logic** – apply bonus and tax rules using `if-then-else`.
+
+🔹 **Practice commenting and indentation** – follow Haskell’s layout rules.
+
+🔹 **Compose functions** – combine pure functions for final computation like:
+
+```haskell
+basePay :: Int -> Float -> Float
+bonus :: Int -> Float -> Float
+tax :: Float -> Float
+netPay :: Int -> Float -> Float
+```
+
+---
+
+## 🧪 What to Deliver
+
+A **runnable console application** that:
+
+📌 Displays a welcome message and prompts:
+```
+👷 Welcome to the Haskell Pay Calculator!
+
+Enter your name:  
+Enter hours worked:  
+Enter hourly rate:  
+```
+
+📌 Computes:
+- **Base Pay**: `hours × rate`
+- **Bonus**: 10% extra if hours > 40
+- **Tax**: 15% on gross
+- **Net Pay**: base + bonus − tax
+
+📌 Outputs:
+```
+--- Pay Summary for Victor ---
+Base Pay: ₦42000.0
+Bonus: ₦4200.0
+Tax: ₦6930.0
+Net Pay: ₦39270.0
+```
+
+---
+
+## 💡 Bonus Challenges
+
+⭐ Use **guards** instead of `if-then-else` for bonuses  
+⭐ Handle invalid (negative) inputs using conditionals  
+⭐ Display monetary values rounded to two decimal places  
+⭐ Use a tuple return type like `(Float, Float, Float, Float)` for all components  
+⭐ Ask the user if they want to calculate again (looping recursion)  
+⭐ Modularize bonus logic into its own file (for future chapters)
+
+---
+
+## 📦 Build Instructions
+
+✅ Run and test in **GHCi** (`ghci PayCalculator.hs`)  
+✅ Organize your code into **pure functions** inside a `Main` module  
+✅ Optional: Package using **Stack** or **Cabal**  
+✅ Include a small `README.md` file with:
+- What the app does  
+- How to run it  
+- Sample inputs and outputs
