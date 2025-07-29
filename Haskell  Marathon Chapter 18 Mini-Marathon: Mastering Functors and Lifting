@@ -1,0 +1,49 @@
+🧠 Chapter 18 – Mini-Marathon: Mastering Functors and Lifting
+In Chapter 18, you dove deep into abstracting the map function using the Functor type class, and explored how seemingly simple ideas can unlock immense expressive power. Now it’s time to build something to truly grasp the mechanics of <$>, lifting, and nested functors.
+
+🎯 Objectives
+🔹 Understand and implement Functor instances for custom types
+🔹 Explore less intuitive functors like Either a, (,) a, and (->) r
+🔹 Practice using <$> to lift functions into context
+🔹 Reinforce how function mapping works for wrapped values
+🔹 Build confidence navigating nested functor layers
+
+🧪 What to Deliver
+📌 A small Haskell program that:
+
+Defines custom data types and implements valid Functor instances
+
+Demonstrates fmap (or <$>) over various types (Maybe, Either, tuples, functions)
+
+Performs lifting of functions using <$>
+
+Demonstrates nested functor mapping (e.g., fmap . fmap)
+
+Provides output showing behavior of each functor mapping
+
+📌 Include clear notes in comments or a separate README explaining:
+
+Why your Functor instances are lawful (respect identity & composition)
+
+How <$> differs from normal function application
+
+What each mapping operation is doing
+
+💡 Bonus Challenges
+⭐ Define a Functor for a custom wrapper like Box a, Tree a, or Expr a
+⭐ Implement nested mapping using fmap . fmap on structures like Maybe [a]
+⭐ Demonstrate how lifting simplifies transforming values in context
+⭐ Implement <$ (replace all contents) and demonstrate its use
+⭐ Use GHCi to test type inference and Functor behavior step-by-step
+
+📦 Build Instructions
+✅ Test your functions in ghci or a project file
+✅ Write pure, reusable functions
+✅ Optional: Organize into modules and package with Cabal or Stack
+✅ Add a README.md that includes:
+
+An overview of your data types and instances
+
+Examples of functor usage and lifting
+
+Explanations for any unintuitive behavior observed
